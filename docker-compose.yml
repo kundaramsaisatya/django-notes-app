@@ -37,7 +37,7 @@ services:
 
   db:
     image: mysql
-    container_name: "db_cont"
+    container_name: "db"
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=test_db
