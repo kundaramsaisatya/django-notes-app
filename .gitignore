@@ -25,4 +25,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Ignore Docker volumes (important)
 data/mysql/db
+data/mysql
