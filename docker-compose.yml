@@ -24,7 +24,7 @@ services:
     env_file:
       - ".env"
     depends_on:
-      - db
+      - db_cont
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8000/admin || exit 1"]
@@ -35,7 +35,7 @@ services:
     networks:
       - notes-app-nw
 
-  db:
+  db_cont:
     image: mysql
     container_name: "db"
     environment:
